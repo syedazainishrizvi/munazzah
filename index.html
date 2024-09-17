@@ -1,0 +1,111 @@
+<!--made by syeda zainish rizvi-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--home page-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="left">
+                    Munazzah.
+                </div>
+                <div class="right">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+            <div class="header-text">
+                <h1>My self<br>Syeda <span>Munazzah</span> Rizvi</h1>
+                <p>pharmacist</p>
+            </div>
+        </div>
+    </div>
+    <!----------------about page----------------->
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user-black-bg.png" alt="3d render image of a girl wearing red hijab and white coat">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p id="para">A motivated Pharmacist with a real passion for health care would like to be a part 
+                        of professional team in a renowned organization to gain the first-hand knowledge 
+                        and experience of the Pharmacy profession to excel my carrier in a challenging & 
+                        professional environment.
+                        </p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Self</span> Made<br></li>
+                            <li><span>Hard</span> Working</li>
+                            <li>Good <span>Communication</span> Skills</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2014</span><br>Pharm-D from Jinnah University</li>
+                            <li><span>2009</span><br>F.Sc (pre-medical) from Khatoon-e-Pakistan Govt Girls College</li>
+                            <li><span>2006</span><br>S.Sc (science) from Metropolitan Academy</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sep 2016- April 2019</span><br>Quality Assurance Officer at EPLA Laboratories.</li>
+                            <li><span>Feb 2016-Sep2016</span><br>Quality Assurance Officer at Maple Pharmaceutical.</li>
+                            <li><span>April 2015-Jan 2016</span><br>QA/QC & Production Officer at Asian Continental (Pvt) Ltd.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------contact me page-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:minerizvi@gmail.com" id="email"> minerizvi@gmail.com</a></p>
+                    <p><i class="fa-duotone fa-solid fa-phone"></i>  03432627943</p>
+                    <a href="Munazzah Resume.pdf" download class="btn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="ebbf4feb-27c2-4979-b1e4-a1080e4c5221">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn" id="sub">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>Made with <i class="fa-sharp fa-solid fa-heart"></i> by Syeda Zainish Rizvi </p>
+    </footer>
+</div>
+
+    <script  src="./script.js"></script>
+</body>
+</html>
